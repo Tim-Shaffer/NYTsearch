@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+​
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+​
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <title>New York Times Search</title>
+  </head>
+​
+​
+  <body>
+    <div class="container">
+        <div class="jumbotron bg-dark">
+            <h1 class= "title text-center mb-4 text-white">
+                <i class="material-icons">library_books</i>                
+                New York Times Search
+            </h1>
+​
+        </div>
+​
+​
+    </div>
+​
+    <div class="container bg-primary">
+        <div class="row">
+            <div class= "col-12 mb-5">
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group text-white">
+                           <label for="searchTerm">
+                            Search Term:
+                            
+                           </label> 
+                           <input type="text" class="form-control" id="searchTerm">
+                        </div>
+​
+                        <div class="form-group text-white">
+                            <label for="numOfRecords">Number of Records to Retrieve:</label>
+                            <select class="form-control" id="numOfRecords">
+                                <option value="1">1</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-white">
+                            <label for="startYear">Start Year (Optional):</label>
+                            <input type="text" class="form-control" id="startYear">
+                        </div>
+                        <div class="form-group text-white">
+                            <label for="endYear">End Year (Optional):</label>
+                            <input type="text" class="form-control" id="endYear">
+                        </div>
+                        <button type="button" class="btn btn-success" id="searchSubmit">
+                            <i class="material-icons">search</i>
+                            Search
+                        </button>
+​
+                        <button type="button" class="btn btn-danger" id="clearResults">
+                            <i class="material-icons">delete</i>
+                            Clear Results
+                        </button>
+​
+                    </form>
+                </div>                
+            </div>
+        </div>
+    </div>
+<div class= "container bg-primary">
+    <div class="row">
+        <div class= "col-12">
+            <div class= "card">
+                <div class= "card-header bg-secondary">
+                    <i class="material-icons">calendar_view_day</i>
+                    Top Articles
+                </div>
+​
+                <div class="card-body">
+                    <div id="articlesResults"></div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+​
+​
+​
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>   
+    
+    <script src="app.js"></script>
+
+  </body>
+</html>
